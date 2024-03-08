@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: register-app-service
+  name: kubernetes-cicd-jenkins-service
   labels:
-    app: register-app
+    app: kubernetes-cicd-jenkins
 spec:
   selector:
-    app: register-app
+    app: kubernetes-cicd-jenkins
 
   ports:
     - port: 8080
