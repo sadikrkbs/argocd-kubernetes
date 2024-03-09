@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: kubernetes-cicd-jenkins:1.0.0-41
+  name: register-app-deployment
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: kubernetes-cicd-jenkins:1.0.0-41
+      app: register-app
   template:
     metadata:
       labels:
-        app: kubernetes-cicd-jenkins:1.0.0-41
+        app: register-app
     spec:
       containers:
-        - name: kubernetes-cicd-jenkins:1.0.0-41
+        - name: register-app
           image: sadi1234/kubernetes-cicd-jenkins:1.0.0-41
           resources:
             limits:
