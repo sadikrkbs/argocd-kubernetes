@@ -13,7 +13,7 @@ pipeline {
 
         stage("Checkout from SCM") {
                steps {
-                   git branch: 'main', credentialsId: 'github', url: 'https://github.com/sadikrkbs/argocd-kubernetes'
+                   git branch: 'main', credentialsId: 'github', url: 'https://github.com/sadikrkbs/Kubernetes-CICD-Pipeline-Using-Jenkins'
                }
         }
 
