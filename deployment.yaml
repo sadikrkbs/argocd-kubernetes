@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: kubernetes-cicd-jenkins
-          image: sadi1234/kubernetes-cicd-jenkins:1.0.0-20:CHANGEME
+          image: sadi1234/kubernetes-cicd-jenkins:1.0.0-27
           resources:
             limits:
               memory: "256Mi"
