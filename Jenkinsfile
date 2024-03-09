@@ -33,7 +33,7 @@ pipeline {
                    git config --global user.name "sadikrkbs"
                    git config --global user.email "sadikirkbes@gmail.com"
                    git add deployment.yaml
-                   git commit -m "Updated Deployment Manifest11"
+                   git commit -m "Updated Deployment Manifest11123"
                 """
                 withCredentials([gitUsernamePassword(credentialsId: 'github', gitToolName: 'Default')]) {
                   sh "git push https://github.com/sadikrkbs/argocd-kubernetes main"
